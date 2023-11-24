@@ -10,8 +10,15 @@
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
+    /* 157.81deg,
+    #a7f9cf -43.27%,
+    #7df5b8 -21.24%,
+    #4aed9d 12.19%,
+    #26e782 29.82%,
+    #1ecf66 51.94%,
+    #159c4b 90.29% */
   );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1)
 }
 
 * {
@@ -60,7 +67,7 @@
     -168.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
-    #11101d 91.61%
+    rgba(0, 66, 18, 0.666) 91.61%
   );
 }
 
@@ -108,7 +115,7 @@
 }
 
 .feature-card:hover {
-  background: var(--black-gradient);
+  /* background: var(--black-gradient); */
   box-shadow: var(--card-shadow);
 }
 
@@ -125,12 +132,12 @@
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  background: linear-gradient(180deg, rgba(4, 121, 10, 0) 0%, #063905 100%);
   filter: blur(100px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  background: linear-gradient(90deg, #00a857 0%, #016233 100%);
   filter: blur(200px);
 }
 

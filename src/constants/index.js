@@ -12,7 +12,12 @@ import {
   dropbox, 
   send, 
   shield, 
-  star
+  star,
+  environment,
+  fertilizer,
+  ammonia,
+  car,
+  power
 } from "../assets";
 
 export const navLinks = [
@@ -22,15 +27,15 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Features",
+    title: "About",
   },
   {
     id: "product",
-    title: "Product",
+    title: "Product/Services",
   },
   {
     id: "clients",
-    title: "Clients",
+    title: "Technology",
   },
 ];
 
@@ -38,23 +43,54 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Environment and Sustainability",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "We are passionate about protecting the environment and promoting sustainability. Our focus on green ammonia production is just one example of how we are working to create a greener future.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Safety",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "We are dedicated to providing a safe and healthy work environment for our employees, while also ensuring the safety of our communities and the environment we operate in.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Strategy",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Our strategy is centered around creating sustainable solutions that meet the needs of our customers, while also driving positive impact in our communities and the environment.",
+  },
+];
+
+export const services = [
+  {
+    id: "service-1",
+    icon: fertilizer,
+    title: "Anhydrous Ammonia Fertilizer",
+    content:
+      "Our Anhydrous Ammonia Fertilizer is the cornerstone of sustainable agriculture. Engineered to provide essential nutrients to your crops, they unlock the potential of your farmland.",
+  },
+  {
+    id: "service-2",
+    icon: ammonia,
+    title: "Liquid Ammonia",
+    content:
+      "Our liquid ammonia is a versatile and essential ingredient for various industrial processes, offering unmatched efficiency and reliability. ",
+  },
+  {
+    id: "service-3",
+    icon: car,
+    title: "Logistics Support",
+    content:
+      "We provide logistics support to ensure our products are delivered safely and efficiently to our customers.",
+  },
+  {
+    id: "service-4",
+    icon: power,
+    title: "Off-Grid or Backup Power Solutions",
+    content:
+      "In areas lacking reliable electricity access, it can power homes and businesses as an off-grid solution. And when the grid falters due to outages, our green ammonia serves as a dependable, eco-friendly backup power source.",
   },
 ];
 
@@ -104,6 +140,23 @@ export const stats = [
 ];
 
 export const footerLinks = [
+  {
+    title: "Contact",
+    links:[
+      {
+        name: "info@ableneeenergy.com",
+        link: "info@ableneeenergy.com"
+      },
+      {
+        name: "ablenee.trading@gmail.com",
+        link: "ablenee.trading@gmail.com"
+      },
+      {
+        name: "Tel: +251 966 272 457",
+        link: ""
+      }
+    ]
+  },
   {
     title: "Useful Links",
     links: [
@@ -188,7 +241,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/ablenee-energy-solutions/",
   },
 ];
 

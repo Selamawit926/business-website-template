@@ -23,6 +23,18 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import environment from "./environment.svg";
+import home from "./home.png"
+import homeCircle from "./homeCircle.png"
+import logoHome from "./logo2.png"
+import green from "./green.jpg"
+import fertilizer from "./fertilizer.png"
+import ammonia from "./ammonia.png"
+import car from "./car.png"
+import power from "./power.png"
+import intro from "./intro3.png"
+import first from "./first.jpg"
+import first2 from "./first2.png"
 
 export {
   airbnb,
@@ -50,4 +62,15 @@ export {
   people01,
   people02,
   people03,
+  environment,
+  home,
+  logoHome,
+  green,
+  homeCircle,
+  fertilizer,
+  ammonia,
+  car,
+  power,
+  intro,
+  first2
 };
