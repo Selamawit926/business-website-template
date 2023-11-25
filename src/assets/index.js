@@ -16,9 +16,9 @@ import google from "./google.svg";
 import apple from "./apple.svg";
 import arrowUp from "./arrow-up.svg";
 import discount from "./Discount.svg";
-import facebook from "./facebook.svg";
-import instagram from "./instagram.svg";
-import linkedin from "./linkedin.svg";
+import facebook from "./fb.png";
+import instagram from "./ig.png";
+import linkedin from "./linkedin.png";
 import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
@@ -27,14 +27,15 @@ import environment from "./environment.svg";
 import home from "./home.png"
 import homeCircle from "./homeCircle.png"
 import logoHome from "./logo2.png"
+import logoR from "./logo3.png"
 import green from "./green.jpg"
 import fertilizer from "./fertilizer.png"
 import ammonia from "./ammonia.png"
 import car from "./car.png"
 import power from "./power.png"
 import intro from "./intro3.png"
-import first from "./first.jpg"
 import first2 from "./first2.png"
+import intro23 from "./intro23.png"
 
 export {
   airbnb,
@@ -72,5 +73,7 @@ export {
   car,
   power,
   intro,
-  first2
+  first2,
+  logoR,
+  intro23
 };

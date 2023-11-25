@@ -1,45 +1,21 @@
 import React from 'react'
-import { 
-  Billing, 
-  Business, 
-  CardDeal, 
-  Clients, 
-  CTA, 
-  Footer, 
-  Hero, 
-  Navbar, 
-  Stats, 
-  Testimonials 
-} from './components'
-import styles from './style'
+import About from "./About";
+import Home from "./Home";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import Services from './Services';
+import Technology from './Technology';
 
-const App = () => {
-  return (
-    <div className='bg-[#628474] w-full overflow-hidden'>
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar/>
-        </div>
-      </div>
-      <div className={`bg-[#628474] ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero/>      
-        </div>
-      </div>
-      <div className={`bg-[#628474] ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          {/* <Stats/> */}
-          <Business/>
-          <Billing/>
-          <CardDeal/>
-          {/* <Testimonials/> */}
-          {/* <Clients/> */}
-          <CTA/>
-          <Footer/>     
-        </div>
-      </div>
-    </div>
-  )
-}
+
+const App = () => (
+  <Router>
+    <Routes>
+      <Route path="/" exact element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/technology" element={<Technology />} />
+    </Routes>
+  </Router>
+);
 
 export default App

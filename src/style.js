@@ -1,8 +1,11 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
-  heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-  paragraph: "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+  heading23: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+  heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-[#537F64] xs:leading-[76.8px] leading-[66.8px] w-full",
+  heading22: "font-poppins font-semibold xs:text-[48px] text-[40px] text-[#537F64] xs:leading-[76.8px] leading-[66.8px]",
+  paragraph: "font-poppins font-normal text-[#537F64] text-[18px] leading-[30.8px]",
+  paragraph2: "font-poppins font-normal text-white text-[18px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
@@ -23,6 +26,8 @@ export const layout = {
   sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+  sectionInfo2: `flex-1 ${styles.flexCenter} flex-col`,
+
 }
 
 export default styles;

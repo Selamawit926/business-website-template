@@ -17,24 +17,27 @@ import {
   fertilizer,
   ammonia,
   car,
-  power
+  power,
+  homeCircle,
+  intro23,
+  intro
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "home",
+    id: "",
     title: "Home",
   },
   {
-    id: "features",
+    id: "about",
     title: "About",
   },
   {
-    id: "product",
+    id: "services",
     title: "Product/Services",
   },
   {
-    id: "clients",
+    id: "technology",
     title: "Technology",
   },
 ];
@@ -88,7 +91,7 @@ export const services = [
   {
     id: "service-4",
     icon: power,
-    title: "Off-Grid or Backup Power Solutions",
+    title: "Backup Power Solutions",
     content:
       "In areas lacking reliable electricity access, it can power homes and businesses as an off-grid solution. And when the grid falters due to outages, our green ammonia serves as a dependable, eco-friendly backup power source.",
   },
@@ -234,11 +237,6 @@ export const socialMedia = [
     link: "https://www.facebook.com/",
   },
   {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
     id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/company/ablenee-energy-solutions/",
@@ -248,18 +246,14 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: homeCircle,
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: intro,
   },
   {
     id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
+    logo: intro23,
+  }
 ];

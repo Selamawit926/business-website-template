@@ -1,17 +1,17 @@
 import React from 'react'
-import { clients } from '../constants'
+import { services } from '../constants'
 import styles from '../style'
 
-const Clients = () => {
+const ClientsService = () => {
   return (
-    <section className={`${styles.flexCenter} my-4 mt-25`}>
+    <section className={`${styles.flexCenter} my-4 mt-55`} style={{marginTop: "80px"}}>
       <div className={`${styles.flexCenter} flex-wrap w-full`}>
-        {clients.map((client) => (
+        {services.map((client) => (
           <div key={client.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px]`}>
             <img
-              src={client.logo}
+              src={client.icon}
               alt='client'
-              className='sm:w-[192px] w-[100px] object-contain'
+              className='sm:w-[100px] w-[100px] object-contain'
             />           
           </div>
         ))}
@@ -20,4 +20,4 @@ const Clients = () => {
   )
 }
 
-export default Clients
+export default ClientsService

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { close, logo, logoHome, menu } from '../assets'
+import { close, logo, logoHome, menu, logoR } from '../assets'
 import { navLinks } from '../constants'
+import { Link } from 'react-router-dom'; 
 
 const Navbar = () => {
 
@@ -8,16 +9,18 @@ const Navbar = () => {
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logoHome} alt='hoobank' className='w-[84px] h-[80px]'/>
+       <Link to="/">
+        <img src={logoHome} alt='hoobank' className='w-[170px] h-[150px]'/>
+      </Link>
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, i) => (
           <li 
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white mr-10`}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-[#537F64] mr-10`}
           >
-            <a href={`#${nav.id}`}>
-              {nav.title}
-            </a>
+             <Link to={`/${nav.id}`}>
+                {nav.title}
+            </Link>
           </li>        
         ))}
       </ul>
@@ -33,11 +36,11 @@ const Navbar = () => {
             {navLinks.map((nav, i) => (
               <li 
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white mr-10`}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-[#537F64] mr-10`}
               >
-                <a href={`#${nav.id}`}>
+                <Link to={`/${nav.id}`}>
                   {nav.title}
-                </a>
+                </Link>
               </li>        
             ))}
           </ul>

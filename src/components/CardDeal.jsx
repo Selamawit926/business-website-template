@@ -13,7 +13,6 @@ const CardDeal = () => {
           We kickstart this revolutionary journey by harnessing renewable energy sources 
           like solar and wind power to produce green hydrogen through water electrolysis.
         </p>
-        {/* <Button styles='mt-10'/> */}
       </div>
       <div className={layout.sectionImg}>
         <img

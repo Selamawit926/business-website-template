@@ -9,7 +9,15 @@ import Hero from './Hero'
 import Navbar from './Navbar'
 import Stats from './Stats'
 import Testimonials from './Testimonials'
-
+import AboutIntro from './AboutIntro'
+import BusinessAbout from './BusinessAbout'
+import Features from './Features'
+import BillingIntro from './BillingIntro'
+import BillingAbout from './BillingAbout'
+import FeaturesService from './FeaturesService'
+import ClientsService from './ClientsService'
+import TechnologyAbout from './TechnologyAbout'
+import TechnologyDescr from './TechnologyDescr'
 export {
     Billing,
     Business,
@@ -21,5 +29,14 @@ export {
     Hero,
     Navbar,
     Stats,
-    Testimonials
+    Testimonials,
+    AboutIntro,
+    BusinessAbout,
+    Features, 
+    BillingIntro,
+    BillingAbout,
+    FeaturesService,
+    ClientsService, 
+    TechnologyAbout,
+    TechnologyDescr
 }

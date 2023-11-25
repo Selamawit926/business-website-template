@@ -12,10 +12,10 @@ const FeatureCard = ({ icon, title, content, index }) => (
       />
     </div>
     <div className='flex-1 flex flex-col ml-3'>
-      <h4 className='font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1'>
+      <h4 className='font-poppins font-semibold text-[#537F64] text-[18px] leading-[23px] mb-1'>
         {title}
       </h4>
-      <p className='font-poppins font-normal text-dimWhite text-[16px] leading-[24px]'>
+      <p className='font-poppins font-normal text-[#537F64] text-[16px] leading-[24px]'>
         {content}
       </p>
     </div>
@@ -32,7 +32,6 @@ const Business = () => {
         We've set out to revolutionize agriculture by harnessing the power of renewable energy sources to produce green ammonia, 
         a vital component of sustainable farming practices.
         </p>
-        {/* <Button styles='mt-10'/> */}
       </div>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { apple, bill, google } from '../assets'
+import { apple, bill, google, homeCircle } from '../assets'
 import styles, { layout } from '../style'
 import { features,services } from '../constants'
 
@@ -23,23 +23,27 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 )
 
-const Billing = () => {
+const TechnologyAbout = () => {
   return (
     <section id='product' className={layout.sectionReverse}>
-      <div className={`${layout.sectionImg} flex-col`}>
-        {services.map((feature, index) => (
-          <FeatureCard key={feature.id} {...feature} index={index}/>
-        ))}
+      <div className={layout.sectionImg}>
+        <img
+          src={homeCircle}
+          alt='card'
+          className='w-[100%] h-[100%]'
+        />
       </div>
-      <div className={layout.sectionInfo}  style={{marginLeft: "150px"}}>
-        <h2 className={styles.heading2}>  Sustainable Agriculture <br className='sm:block hidden'/> and Renewable Energy</h2>
+        
+      <div className={layout.sectionInfo} style={{marginLeft:'150px'}}>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Our focus on producing green ammonia addresses the fertilizer shortage and helps create a brighter, greener future. 
-        We offer a range of innovative products and services to support sustainable agriculture and renewable energy
+        When these two eco-friendly elements, green hydrogen and nitrogen, are thoughtfully combined in our high-pressure Haber-Bosch reaction chamber, we create carbon-neutral ammonia. This sustainable approach not only addresses critical agricultural and industrial needs but also takes strides towards a cleaner, greener planet.
+        <br /><br />
+        With Ablenee's commitment to green, carbon-neutral processes, we're pioneering a more sustainable future for agriculture, industry, and the environment as a whole.
         </p>
       </div>  
+     
     </section>
   )
 }
 
-export default Billing
+export default TechnologyAbout

@@ -1,7 +1,6 @@
 import React from 'react'
-import { apple, bill, google } from '../assets'
+import { features } from '../constants'
 import styles, { layout } from '../style'
-import { features,services } from '../constants'
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? 'mb-6' : 'mb-0'} feature-card`}>
@@ -23,23 +22,16 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 )
 
-const Billing = () => {
+const Features = () => {
   return (
-    <section id='product' className={layout.sectionReverse}>
-      <div className={`${layout.sectionImg} flex-col`}>
-        {services.map((feature, index) => (
+    <section className={layout.section}>
+      <div className={`${layout.sectionImg} flex-row`}>
+        {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index}/>
-        ))}
+        ))} 
       </div>
-      <div className={layout.sectionInfo}  style={{marginLeft: "150px"}}>
-        <h2 className={styles.heading2}>  Sustainable Agriculture <br className='sm:block hidden'/> and Renewable Energy</h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Our focus on producing green ammonia addresses the fertilizer shortage and helps create a brighter, greener future. 
-        We offer a range of innovative products and services to support sustainable agriculture and renewable energy
-        </p>
-      </div>  
     </section>
   )
 }
 
-export default Billing
+export default Features
