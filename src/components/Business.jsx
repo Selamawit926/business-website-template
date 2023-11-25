@@ -26,7 +26,7 @@ const Business = () => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Welcome to <br className='sm:block hidden'/>Albenee Energy Solutions</h2>
+        <h2 className={styles.heading2}>Welcome to <br className='sm:block hidden'/>Ablenee Energy Solutions</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Our core mission is to tackle the pressing fertilizer shortage that has plagued our nation's farmers. 
         We've set out to revolutionize agriculture by harnessing the power of renewable energy sources to produce green ammonia, 

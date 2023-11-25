@@ -14,18 +14,18 @@ import styles from './style'
 
 const Technology = () => {
   return (
-    <div id='clients' className='bg-white w-full overflow-hidden'>
+    <div id='clients' className='bg-[#F2FEF8] w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar/>
         </div>
       </div>
-      <div className={`bg-white ${styles.flexCenter}`} style={{marginLeft: '50px', marginRight:'50px'}}>
+      <div className={`bg-[#F2FEF8] ${styles.flexCenter}`} style={{marginLeft: '50px', marginRight:'50px'}}>
         <div className={`${styles.boxWidth}`}>
           <CardDeal/>      
         </div>
       </div>
-      <div className={`bg-white ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`bg-[#F2FEF8] ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <TechnologyDescr/>
           <TechnologyAbout/>

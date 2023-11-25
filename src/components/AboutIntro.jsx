@@ -11,7 +11,7 @@ const AboutIntro = () => {
         <div className='flex flex-row justify-between items-center w-full'>
           <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-[#537F64] ss:leading-[100.8px] leading-[75px]'>
           Welcome to <br className='sm:block hidden'/> {" "}
-            <span className='text-gradient'>Albenee Energy</span> {" "}
+            <span className='text-gradient'>Ablenee Energy</span> {" "}
           </h1>
         </div>
         <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-[#537F64] ss:leading-[100px] leading-[75px] w-full'>

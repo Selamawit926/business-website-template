@@ -25,7 +25,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Features = () => {
   return (
     <section className={layout.section}>
-      <div className={`${layout.sectionImg} flex-row`}>
+      <div className={`${layout.sectionImg} flex-col md:flex-row`}>
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index}/>
         ))} 
