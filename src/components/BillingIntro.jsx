@@ -33,7 +33,7 @@ const BillingIntro = () => {
         We offer a range of innovative products and services to support sustainable agriculture and renewable energy
         </p>
       </div>  
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`} style={{ marginRight: '30px', marginBottom:'20px' }}>
+      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`} style={{ marginRight: '30px', marginBottom:'10px', marginTop:'100px' }}>
         <img
           src={intro23}
           alt='logo'
