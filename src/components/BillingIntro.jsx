@@ -23,7 +23,9 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 )
 
+
 const BillingIntro = () => {
+  const isMobile = window.innerWidth <= 500;
   return (
     <section id='product' className={layout.sectionReverse}>
       <div className={layout.sectionInfo}  style={{marginLeft: "50px"}}>
@@ -33,7 +35,7 @@ const BillingIntro = () => {
         We offer a range of innovative products and services to support sustainable agriculture and renewable energy
         </p>
       </div>  
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`} style={{ marginRight: '30px', marginBottom:'10px', marginTop:'110px' }}>
+      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`} style={{marginRight: '30px', marginTop: isMobile ? '200px' : '0' }}>
         <img
           src={intro23}
           alt='logo'
