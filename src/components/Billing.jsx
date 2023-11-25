@@ -31,7 +31,7 @@ const Billing = () => {
           <FeatureCard key={feature.id} {...feature} index={index}/>
         ))}
       </div>
-      <div className={layout.sectionInfo}  style={{marginLeft: "150px"}}>
+      <div className={layout.sectionInfo}  style={{marginLeft: "80px"}}>
         <h2 className={styles.heading2}>  Sustainable Agriculture <br className='sm:block hidden'/> and Renewable Energy</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Our focus on producing green ammonia addresses the fertilizer shortage and helps create a brighter, greener future. 
